@@ -13,10 +13,11 @@ object StringOperations {
 
   //interpolation - inject values or expressions inside a string
   val name = "Dorothea"
-  val age = "38"
+  val age = 38
   val greeting = "Hi, my name is " + name + " and I am " + age + " years old."
 
   val greet2 = s"Hi, my name is $name and I am $age years old." //s-interpolated string
+  val greet3 = s"Hi, my name is $name and I am $age, I will turn ${age + 1} next year."
 
 
   def main(args: Array[String]): Unit = {
@@ -24,6 +25,7 @@ object StringOperations {
     println(findIndex2) //invalid returns -1
     println(greeting)
     println(greet2)
+    println(greet3)
 
   }
 }
